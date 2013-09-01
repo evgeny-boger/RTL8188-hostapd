@@ -4,6 +4,8 @@ fix for libnl3 3.3 header location.
 
 Signed-off-by: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 
+--- a/src/drivers/drivers.mak
++++ b/src/drivers/drivers.mak
 @@ -52,7 +52,7 @@ endif
  
  ifdef CONFIG_LIBNL20
@@ -12,3 +14,4 @@ Signed-off-by: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 +DRV_CFLAGS += -DCONFIG_LIBNL20 `pkg-config --cflags libnl-3.0`
  endif
  endif
+ 
